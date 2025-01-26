@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Extra small devices (phones, 600px and down) */
+:root {
+  --primary-color: #ff5252;
+  --secondary-color: #ffffff;
+  --price-color: #ff5252;
+  --link-hover-color: #ff5252;
+  --box-bodybkg-color: #ffffff;
+}
+
+html{
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body{
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+button,a{
+  all: unset;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+      body{
+        overflow-x: hidden;
+      }  
+
+      nav{
+        /* display: grid;
+        grid-template-columns: 10px 350px 200px;
+        justify-content: space-between;
+        height: 100px;
+        width: 100%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 25px;
+      }
+      h2{
+        grid-column: 1;
+      }
+
+     
+
+      .div-user{
+        
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        width: 100%;
+        max-width: 200px;
+        height: 50px;
+        gap: 10px;
+        margin-top: 5px;
+      }
+
+      .menu-svg{
+        mask-image: url('./img/menu.svg');
+        content: "";
+        position: absolute;
+        left: 1px;
+        top: 30px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        -webkit-mask-size: 20px;
+        mask-size: 20px;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        mask-position: left center;
+        -webkit-mask-position: left center;
+        background-color: #000;
+        font-size: 0;
+        vertical-align: sub;
+      }
+      .user{
+        mask-image: url('./img/user.svg');
+        height: 30px;
+        width: 30px;
+        mask-size: 22px;
+        mask-repeat: no-repeat;
+        background-color: rgb(0, 0, 0);
+        color: #000;
+        cursor: pointer;
+        
+      }
+
+      .compare{
+        mask-image: url('./img/compare.svg');
+        height: 30px;
+        width: 30px;
+        mask-size: 22px;
+        mask-repeat: no-repeat;
+        background-color: rgb(0, 0, 0);
+
+        cursor: pointer;
+      }
+
+      .heart{
+        mask-image: url('./img/hearth.svg');
+        height: 30px;
+        width: 30px;
+        mask-size: 25px;
+        mask-repeat: no-repeat;
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+      }
+
+      .cart {
+        mask-image: url('./img/cart.svg');
+        height: 30px;
+        width: 30px;
+        mask-size: 25px;
+        mask-repeat: no-repeat;
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+      }
+
+      .form{
+     
+     
+        width: 100%;
+      }
+
+      form {
+        padding: 2px 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+      }
+      .form form input{
+        padding: 20px;
+        border: 1px solid #e5e5e5;
+        height: 35px;
+        background: #fff;
+        width: 450px;
+        border-radius: 2px;
+        min-width: auto;
+        
+      }
+
+      .form button{
+        border: 0;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        transition: all 0.3s ease;
+       outline-offset: 0;
+        margin-inline-start: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-width: 100px;
+        text-align: center;
+        padding: 12px 6px;
+        position: static;
+        color: white;
+      }
+
+      .bg-slide{
+        position: relative;
+
+        max-width: 100%;
+        margin: 20px 0;
+        padding: 0 15px;
+      }
+
+
+      .slide-img .li-slide-1 .img-slide-1{
+          /* margin-top: 15px;
+          width: 95%; */
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .li-slide-1{
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      .header{
+        position: absolute;
+        top: 20%;
+        left: 52%;
+        
+        word-wrap: break-word; 
+        white-space: nowrap;
+        text-align: left;
+      }
+      
+
+      
+      .description .heading-1{
+     
+        font-size: 16px;
+       
+      }
+
+      .description .heading-2{
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 600;
+      }
+
+     .header  .description .heading-2 span{
+        display: block;
+      }
+
+     .header  .description .heading-3 {
+        margin-top: 12px;
+        font-size: 18px;
+      }
+
+      .header .description .heading-3 .span-price{
+        font-size: 22px;
+        font-weight: 700;
+        color: #ff5252;
+        
+      }
+
+      .header .description .heading-4{
+        margin-top: 20px;
+      }
+
+      .btn-link{
+        padding: 6px 15px;
+        background-color: #ff5252;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        user-select: none;
+        color: white;
+        white-space: nowrap;
+        letter-spacing: .5px;
+      }
+
+        /* BANNER */
+  .banner{
+    display: flex;
+    position: relative;
+    gap: 5px;
+  }
+
+  .banner .sub{
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .banner .sub  img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .banner-text{
+    position: absolute;
+    top: 20%;
+    bottom: 40%;
+    left: 32px;
+    right: auto;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    letter-spacing: 0;
+  }
+
+  .banner-title{
+
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
+  }
+
+  .banner-title span{
+    display: block;
+  }
+
+  .banner-price{
+    margin-top: 5px;
+  }
+
+  .banner-price span{
+    font-size: 20px;
+  
+    font-weight: 700;
+    color: #ff5252;
+  }
+   
+
+  .shop-btn{
+    margin-top: 10px;
+    background: transparent;
+    padding: 0;
+    color: black;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+
+  .banner-text-2{
+    position: absolute;
+    top: 20%;
+    bottom: 40%;
+    right: 20px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    letter-spacing: 0;
+  }
+
+  .banner-title-2{
+
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
+  }
+
+  .banner-title-2 span{
+    display: block;
+  }
+
+  .banner-price-2{
+    margin-top: 5px;
+  }
+
+  .banner-price-2 span{
+    font-size: 20px;
+  
+    font-weight: 700;
+    color: #ff5252;
+  }
+   
+
+  .shop-btn-2{
+    margin-top: 10px;
+    background: transparent;
+    padding: 0;
+    color: black;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  
+}
+
+@media only screen and (max-width: 575px) {
+  .banner{
+    display: block;
+    position: relative;
+  }
+
+  .banner .sub{
+    width: 350px;
+    margin: auto;
+    height: 236px;
+    max-width: 100%;
+
+  }
+
+  .banner .sub img{
+    width: 100%;
+
+      vertical-align: middle;
+  }
+
+  .banner-text{
+    position: relative;
+    top: -70%;
+    /* word-wrap: break-word; 
+        white-space: nowrap;
+    text-align: left; */
+    
+   
+  
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    letter-spacing: 0;
+  }
+
+  .banner-title{
+
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
+  }
+
+  .banner-title span{
+    display: block;
+  }
+
+  .banner-price{
+    margin-top: 5px;
+  }
+
+  .banner-price span{
+    font-size: 20px;
+  
+    font-weight: 700;
+    color: #ff5252;
+  }
+   
+
+  .shop-btn{
+    margin-top: 10px;
+    background: transparent;
+    padding: 0;
+    color: black;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+  .banner-text-2{
+    position: relative;
+    top: -70%;
+    /* word-wrap: break-word; 
+        white-space: nowrap;
+    text-align: left; */
+    left: 160px;
+   
+  
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    letter-spacing: 0;
+  }
+
+  .banner-title-2{
+
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
+  }
+
+  .banner-title-2 span{
+    display: block;
+  }
+
+  .banner-price-2{
+    margin-top: 5px;
+  }
+
+  .banner-price-2 span{
+    font-size: 20px;
+  
+    font-weight: 700;
+    color: #ff5252;
+  }
+   
+
+  .shop-btn-2{
+    margin-top: 10px;
+    background: transparent;
+    padding: 0;
+    color: black;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  
+
+}
+
+
+@media only screen and (max-width: 490px) {
+  body{
+  
+  }
+  .header{
+  
+    left: 52%;
+
+  }
+
+  .header .description .heading-1{
+     
+    font-size: 16px;
+   
+  }
+
+  .header .description .heading-2{
+    font-size: 20px; 
+    
+  }
+
+
+  .header .description .heading-3{
+    margin: 0;
+  }
+
+  .header .description .heading-3 .span-title{
+ 
+    font-size: 12px;
+   
+  }
+  .header .description .heading-3 .span-price{
+  
+    font-weight: 300;
+    font-size: 15px;
+   
+  }
+
+  .header .description .heading-4{
+    margin-top: 0;
+  }
+
+  .btn-link{
+    padding: 2px 15px;
+    background-color: #ff5252;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+  
+    white-space: nowrap;
+    
+  }
+
+  .shop-btn, .shop-btn-2{
+    margin-top: 10px;
+    background: transparent;
+    padding: 0;
+    color: black;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+  .banner{
+    height: auto;
+  }
+
+  .banner .sub{
+    width: auto;
+    margin: auto;
+    height: 336px;
+    max-width: 100%;
+
+  }
+
+
+
+  .banner .sub  img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .banner-text{
+    position: relative;
+    top: -60%;
+ 
+    left: 32px;
+    right: auto;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    letter-spacing: 0;
+  }
+
+  .banner-title{
+
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: 600;
+  }
+
+  .banner-title span{
+    display: block;
+  }
+
+  .banner-price{
+    margin-top: 5px;
+  }
+
+  .banner-price span{
+    font-size: 22px;
+  
+    font-weight: 700;
+    color: #ff5252;
+  }
+   
+
+  .shop-btn{
+    margin-top: 10px;
+    background: transparent;
+    padding: 0;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .banner-text-2{
+    position: relative;
+    left: 50%;
+  }
+
+}
+
+@media  only screen and (max-width: 400px) {
+
+        
+  .header .heading-1{
+     
+    display: none;
+   
+  }
+
+  .header .description .heading-2{
+    font-size: 16px;
+    
+  }
+
+  .banner{
+    display: block;
+    position: relative;
+  }
+
+  .banner .sub{
+    width: 350px;
+    margin: auto;
+    height: 236px;
+    max-width: 100%;
+
+  }
+
+  .banner-text{
+    position: relative;
+    left: 20px;
+    top: -150px;
+  }
+}
